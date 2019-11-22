@@ -237,9 +237,6 @@ int main(int argc, char *argv[]) {
   //---------------------------------------------------------------------
 
   t = timer_read(T_bench);
-  double t2 = timer_read(T_init);
-  double t3 = timer_read(T_conj_grad);
-  double t4 = timer_read(T_last);
 
   printf("\nComplete...\n");
 
@@ -258,9 +255,6 @@ int main(int argc, char *argv[]) {
   }
 
   printf("\n\nExecution time : %lf seconds\n\n", t);
-  printf("\n\nInit time : %lf seconds\n\n", t2);
-  printf("\n\nConj time : %lf seconds\n\n", t3);
-  printf("\n\nLast time : %lf seconds\n\n", t4);
 
   return 0;
 }
